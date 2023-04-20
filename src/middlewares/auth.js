@@ -15,7 +15,7 @@ function authenticate(req, res, next) {
 
   jwt.verify(token, JWT_SECRET, function (err, decoded) {
     if (err) {
-      res.status(500).send({ error: "Authentiction failed" });
+      res.status(500).send({ error: "Authentiction failed..." });
     } else {
       next();
     }
