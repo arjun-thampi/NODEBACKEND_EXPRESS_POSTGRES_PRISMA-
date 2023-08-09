@@ -105,7 +105,6 @@ const getAll = async (req, res) => {
 };
 
 //get one user
-
 const getOne = async (req, res) => {
   try {
     const { id } = req.params;
